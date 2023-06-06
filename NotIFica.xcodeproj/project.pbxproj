@@ -245,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 055258672A28E8370072F6A1 /* Build configuration list for PBXProject "AppNotIFica" */;
+			buildConfigurationList = 055258672A28E8370072F6A1 /* Build configuration list for PBXProject "NotIFica" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -484,6 +484,7 @@
 				DEVELOPMENT_TEAM = GTV4SRH28V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppNotIFica/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotIFica;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -512,6 +513,7 @@
 				DEVELOPMENT_TEAM = GTV4SRH28V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppNotIFica/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotIFica;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -609,7 +611,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		055258672A28E8370072F6A1 /* Build configuration list for PBXProject "AppNotIFica" */ = {
+		055258672A28E8370072F6A1 /* Build configuration list for PBXProject "NotIFica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				055258972A28E83A0072F6A1 /* Debug */,
