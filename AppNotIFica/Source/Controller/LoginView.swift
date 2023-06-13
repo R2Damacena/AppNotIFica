@@ -11,72 +11,26 @@ import UIKit
 class LoginView: UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .white
+        self.backgroundColor = .viewBackGroundColor
         setupVisualElements()
     }
     
-    var logoLogin: UIImageView = {
-        let logoLogin = UIImageView ()
-        logoLogin.image = UIImage(named: "logoLogin")
-        logoLogin.contentMode = .scaleAspectFit
-        logoLogin.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        return logoLogin
-    }()
+    var logoLogin = ImageDefault(image: "logoLogin")
     
-    var logoLabel: UILabel = {
-        let logoLabel = UILabel ()
-        logoLabel.textColor = UIColor(red: 0.541, green: 0.541, blue: 0.557, alpha: 1)
-        logoLabel.font = UIFont(name: "SFProDisplay-Light", size: 16)
-        logoLabel.text = "Registre e gerencie as ocorrências do seu IF"
-        logoLabel.translatesAutoresizingMaskIntoConstraints = false
+    //cria a função com as propriadades da label no login
+    var logoLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
         
+    //cria a função com as propriadades da text no login
+    var emailTextField = TextFieldDefault (placeholder: "E-mail")
         
-        return logoLabel
-    }()
-    
-    var emailTextField: UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "E-mail"
-        textField.translatesAutoresizingMaskIntoConstraints = false
+    //cria a função com as propriadades da text no login
+    var senhaTextField = TextFieldDefault (placeholder: "Senha")
         
-
+    //cria a função com as propriadades da butao no logor
+    var buttonLogar = ButtonDefault(botao: "LOGAR")
         
-        return textField
-    }()
-    
-    var senhaTextField: UITextField = {
-        let textField = UITextField ()
-        textField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        textField.placeholder = "Senha"
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        
-
-        
-        
-        return textField
-    }()
-    
-    var buttonLogar: UIButton = {
-        let button = UIButton ()
-        button.setTitle("LOGAR", for: .normal)
-        button.layer.backgroundColor = UIColor(red: 0.369, green: 0.639, blue: 0.639, alpha: 1).cgColor
-        button.layer.cornerRadius = 14
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-    
-    var buttonRegistrar: UIButton = {
-        let button = UIButton ()
-        button.setTitle("REGISTRAR", for: .normal)
-        button.layer.backgroundColor = UIColor(red: 0.369, green: 0.639, blue: 0.639, alpha: 1).cgColor
-        button.layer.cornerRadius = 14
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
+    //cria a função com as propriadades do botão registrar
+    var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
     
     func setupVisualElements(){
         self.addSubview(logoLogin)
