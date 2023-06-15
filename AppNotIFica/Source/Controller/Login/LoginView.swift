@@ -15,6 +15,15 @@ class LoginView: UIView{
         setupVisualElements()
     }
     
+    var onRegisterTap: (() -> Void)?
+
+    
+    
+    
+    
+    
+    
+    
     var logoLogin = ImageDefault(image: "logoLogin")
     
     //cria a função com as propriadades da label no login
@@ -39,6 +48,9 @@ class LoginView: UIView{
         self.addSubview(senhaTextField)
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
+        
+        buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+
         
         
         NSLayoutConstraint.activate([
@@ -103,5 +115,12 @@ class LoginView: UIView{
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    @objc
+    private func registerTap(){
+        onRegisterTap?()
+    }
+    
     
 }
