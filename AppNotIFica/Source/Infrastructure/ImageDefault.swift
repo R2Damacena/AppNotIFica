@@ -13,6 +13,8 @@ class ImageDefault: UIImageView{
     init(image: String){
         super.init(frame: .zero)
         initImageDefault(image: image)
+        atualizarImagem()
+
         
     }
     

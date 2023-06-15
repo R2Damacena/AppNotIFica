@@ -16,6 +16,7 @@ class LoginView: UIView{
     }
     
     var onRegisterTap: (() -> Void)?
+    var onLoginTap: (()->Void)?
 
     
     
@@ -50,6 +51,8 @@ class LoginView: UIView{
         self.addSubview(buttonRegistrar)
         
         buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+        
+        buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
 
         
         
@@ -120,6 +123,11 @@ class LoginView: UIView{
     @objc
     private func registerTap(){
         onRegisterTap?()
+    }
+    
+    @objc
+    private func loginTap(){
+        onLoginTap?()
     }
     
     
