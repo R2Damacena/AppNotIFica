@@ -15,6 +15,9 @@ class RegisterView: UIView{
         setupVisualElements()
     }
     
+    var onLoginTap: (()->Void)?
+
+    
     //cria a função com as propriadades da label no login
     var logoLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar.", font: UIFont.systemFont(ofSize: 23, weight: .regular))
 
@@ -42,6 +45,8 @@ class RegisterView: UIView{
         self.addSubview(buttonRegistrar)
         self.addSubview(buttonLogar)
         
+        buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
+
         
         NSLayoutConstraint.activate([
             
@@ -113,5 +118,11 @@ class RegisterView: UIView{
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    @objc
+    private func loginTap(){
+        onLoginTap?()
+    }
+
     
 }
