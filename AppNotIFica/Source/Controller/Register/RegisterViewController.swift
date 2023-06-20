@@ -10,6 +10,7 @@ import UIKit
 
 class RegisterViewController: ViewControllerDefault{
     
+    //MARK: -  Clouseres
     var onLoginTap: (()->Void)?
     
     lazy var registerView: RegisterView = {

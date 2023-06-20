@@ -33,6 +33,7 @@
 		05CC73A02A3B533000903962 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC739F2A3B533000903962 /* HomeViewController.swift */; };
 		05CC73A22A3B535100903962 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC73A12A3B535100903962 /* HomeCoordinator.swift */; };
 		05CC73A42A3B5C0B00903962 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC73A32A3B5C0B00903962 /* ViewControllerDefault.swift */; };
+		05CC73A62A40918800903962 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC73A52A40918700903962 /* ViewDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		05CC739F2A3B533000903962 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		05CC73A12A3B535100903962 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		05CC73A32A3B5C0B00903962 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		05CC73A52A40918700903962 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				05CC738E2A38AA5E00903962 /* LabelDefault.swift */,
 				05CC73902A38AA7200903962 /* TextFieldDefault.swift */,
 				05CC73A32A3B5C0B00903962 /* ViewControllerDefault.swift */,
+				05CC73A52A40918700903962 /* ViewDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				05CC73832A389F8300903962 /* Coordinator.swift in Sources */,
 				05CC73992A38ADB000903962 /* RegisterViewController.swift in Sources */,
 				05CC738D2A38AA4F00903962 /* ButtonDefault.swift in Sources */,
+				05CC73A62A40918800903962 /* ViewDefault.swift in Sources */,
 				055258742A28E8370072F6A1 /* ViewController.swift in Sources */,
 				055258702A28E8370072F6A1 /* AppDelegate.swift in Sources */,
 				05CC73882A38A07000903962 /* UIColor+.swift in Sources */,

@@ -13,7 +13,7 @@ class ImageDefault: UIImageView{
     init(image: String){
         super.init(frame: .zero)
         initImageDefault(image: image)
-        atualizarImagem()
+//        atualizarImagem() // Adicionar essa linha para definir a imagem com base no estilo de interface do usuário
 
         
     }
@@ -24,20 +24,20 @@ class ImageDefault: UIImageView{
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    private func atualizarImagem() {
-            if traitCollection.userInterfaceStyle == .dark {
-                self.image = UIImage(named: "logoLoginDark")
-            } else {
-                self.image = UIImage(named: "logoLogin")
-            }
-        }
-        
-        override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-            super.traitCollectionDidChange(previousTraitCollection)
-            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
-                atualizarImagem()
-            }
-        }
+//    private func atualizarImagem() {
+//            if traitCollection.userInterfaceStyle == .dark {
+//                self.image = UIImage(named: "logoLoginDark")
+//            } else {
+//                self.image = UIImage(named: "logoLogin")
+//            }
+//        }
+//
+//        override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+//            super.traitCollectionDidChange(previousTraitCollection)
+//            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+//                atualizarImagem()
+//            }
+//        }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
