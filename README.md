@@ -1,5 +1,7 @@
 # NotIFica
 
+![NotIFica Logo](notifica_logodk.png)
+<br>
 ![NotIFica Logo](notifica_logo.png)
 
 O NotIFica é um aplicativo desenvolvido como parte do curso de extensão "Desenvolvimento de Aplicativos com a Linguagem Swift" oferecido pelo IFB (Instituto Federal de Brasília). O objetivo do aplicativo é fornecer uma plataforma para enviar e receber notificações importantes dentro da comunidade do IFB.
