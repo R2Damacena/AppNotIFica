@@ -10,7 +10,7 @@ import UIKit
 
 class NovaOcorrenciaView: ViewDefault {
     //MARK: - Closures
-    var onCameraTap:(()->Void)?
+    
     //MARK: - Proports
     
     //MARK: - Inits
@@ -18,10 +18,6 @@ class NovaOcorrenciaView: ViewDefault {
     lazy var imagem: UIImageView = {
         let view = UIImageView ()
         view.image = UIImage(named: "imagemCamera")
-        
-        let tapGR = UITapGestureRecognizer(target: self, action: #selector(cameraTap))
-        view.addGestureRecognizer(tapGR)
-        view.isUserInteractionEnabled = true
         
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -36,8 +32,6 @@ class NovaOcorrenciaView: ViewDefault {
     lazy var statusTextField = TextFieldDefault(placeholder: "Status ", keyBordType: .default, returnKeyType: .done)
     
     lazy var saveButton =  ButtonDefault(botao: "SALVAR")
-    
-    
     
     
     
@@ -90,41 +84,6 @@ class NovaOcorrenciaView: ViewDefault {
             
         ])
         
-        self.layoutIfNeeded()
-        
-        let titleBottomBorder = CALayer()
-        titleBottomBorder.frame = CGRect(x: 0, y: titleTextField.frame.size.height - 1, width: 374, height: 1)
-        titleBottomBorder.backgroundColor = UIColor.lightGray.cgColor
-        titleTextField.layer.addSublayer(titleBottomBorder)
-        titleTextField.layer.masksToBounds = true
-        
-        let descBottomBorder = CALayer()
-        descBottomBorder.frame = CGRect(x: 0, y: descriptionTextField.frame.size.height - 1, width: 374, height: 1)
-        descBottomBorder.backgroundColor = UIColor.lightGray.cgColor
-        descriptionTextField.layer.addSublayer(descBottomBorder)
-        descriptionTextField.layer.masksToBounds = true
-        
-        let locBottomBorder = CALayer()
-        locBottomBorder.frame = CGRect(x: 0, y: localizationTextField.frame.size.height - 1, width: 374, height: 1)
-        locBottomBorder.backgroundColor = UIColor.lightGray.cgColor
-        localizationTextField.layer.addSublayer(locBottomBorder)
-        localizationTextField.layer.masksToBounds = true
-        
-        let statusBottomBorder = CALayer()
-        statusBottomBorder.frame = CGRect(x: 0, y: statusTextField.frame.size.height - 1, width: 374, height: 1)
-        statusBottomBorder.backgroundColor = UIColor.lightGray.cgColor
-        statusTextField.layer.addSublayer(statusBottomBorder)
-        statusTextField.layer.masksToBounds = true
-        
-    }
-    
-    @objc
-    private func cameraTap () {
-        self.onCameraTap?()
-    }
-    
-    func setImage (image: UIImage){
-        imagem.image = image
     }
     
 }

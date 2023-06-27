@@ -42,7 +42,6 @@
 		05CC73B62A447E6100903962 /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC73B52A447E6100903962 /* SobreCoordinator.swift */; };
 		05CC73B82A447E6D00903962 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC73B72A447E6D00903962 /* TabBarCoordinator.swift */; };
 		05CC73BA2A447E7900903962 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC73B92A447E7900903962 /* NovaOcorrenciaCoordinator.swift */; };
-		05CC73BC2A4B084600903962 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC73BB2A4B084600903962 /* EscolherImagem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +101,6 @@
 		05CC73B52A447E6100903962 /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
 		05CC73B72A447E6D00903962 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		05CC73B92A447E7900903962 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
-		05CC73BB2A4B084600903962 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +280,6 @@
 			children = (
 				05CC73AF2A447E2200903962 /* NovaOcorrenciaView.swift */,
 				05CC73B12A447E3400903962 /* NovaOcorrenciaViewController.swift */,
-				05CC73BB2A4B084600903962 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -441,7 +438,6 @@
 				05CC73A42A3B5C0B00903962 /* ViewControllerDefault.swift in Sources */,
 				05CC738F2A38AA5E00903962 /* LabelDefault.swift in Sources */,
 				05CC73B62A447E6100903962 /* SobreCoordinator.swift in Sources */,
-				05CC73BC2A4B084600903962 /* EscolherImagem.swift in Sources */,
 				05CC73972A38AD9800903962 /* RegisterView.swift in Sources */,
 				05CC73912A38AA7200903962 /* TextFieldDefault.swift in Sources */,
 				05CC73B02A447E2200903962 /* NovaOcorrenciaView.swift in Sources */,
